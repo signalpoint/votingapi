@@ -8,7 +8,7 @@ Installation
 
 1. Enable this module on your Drupal site:
 
-     https://drupal.org/project/services_votingapi (use the dev snapshot)
+     https://drupal.org/project/services_votingapi
 
 2. On your Drupal site, go to:
 
