@@ -18,6 +18,7 @@ Installation
    
      select_votes
      set_votes
+     delete_votes
 
 3. Then on your Drupal site, go to:
 
@@ -28,4 +29,5 @@ Installation
    
      Retrieve votes
      Set votes
+     Delete votes
 
