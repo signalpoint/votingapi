@@ -36,3 +36,21 @@ function votingapi_set_votes(options) {
   catch (error) { console.log('votingapi_set_votes - ' + error); }
 }
 
+/**
+ * The set_votes service resource.
+ *   options.data.votes[0].entity_type    (Required)
+ *   options.data.votes[0].entity_id    (Required)
+ *   options.data.votes[0].tag    (Required)
+ */
+function votingapi_delete_votes(options) {
+  try {
+    options.method = 'POST';
+    options.path = 'votingapi/delete_votes.json';
+    options.service = 'votingapi';
+    options.resource = 'delete_votes';
+    if (typeof options.data === 'object') { options.data = JSON.stringify(options.data); }
+    Drupal.services.call(options);
+  }
+  catch (error) { console.log('votingapi_delete_votes - ' + error); }
+}
+
